@@ -1,0 +1,36 @@
+{
+	"country": "SE", 
+	"input": [
+		{"id": "recipient", "row": 0}, 
+		{"id": "co", "row": 1, "optional": true},
+		{"id": "address", "row": 2},
+		{"id": "post_number", "row": 3, "validation": {"style": "numeric", "syntax": "000 00", "min": 5, "max": 5}}, 
+		{"id": "post_region", "row": 3} 
+	],
+	"print": [
+		{
+			"countries": ["SE"], 
+			"format": "{recipient}\n{address}\n{post_number} {post_region}",
+			"optional": [
+				{
+					"id": "co", 
+					"insertAfter": "recipient",
+					"separator": "\n",
+					"ifEmpty": ""
+				}
+			]
+		},
+		{
+			"default": true,
+			"format": "{recipient}\n{address}\n{post_number} {post_region}\nSWEDEN", 
+			"optional": [
+				{
+					"id": "co", 
+					"insertAfter": "recipient",
+					"separator": "\n",
+					"ifEmpty": ""
+				} 
+			]
+		}
+	]
+}
