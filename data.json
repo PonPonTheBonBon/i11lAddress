@@ -1,3 +1,4 @@
 {
-	"regions": ["SE"]
+	"regions": ["SE"],
+	"translations": ["en","sv"]
 }
