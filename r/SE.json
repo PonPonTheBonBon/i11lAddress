@@ -5,12 +5,12 @@
 		{"id": "care_of", "row": 1, "optional": true},
 		{"id": "address", "row": 2},
 		{"id": "post_number", "row": 3, "validation": {"style": "numeric", "syntax": "000 00", "min": 5, "max": 5}}, 
-		{"id": "post_region", "row": 3} 
+		{"id": "post_address", "row": 3} 
 	],
 	"print": [
 		{
 			"countries": ["SE"], 
-			"format": "{recipient}\n{address}\n{post_number} {post_region}",
+			"format": "{recipient}\n{address}\n{post_number} {post_address}",
 			"optional": [
 				{
 					"id": "care_of", 
@@ -22,7 +22,7 @@
 		},
 		{
 			"default": true,
-			"format": "{recipient}\n{address}\n{post_number} {post_region}\nSWEDEN", 
+			"format": "{recipient}\n{address}\n{post_number} {post_address}\nSWEDEN", 
 			"optional": [
 				{
 					"id": "care_of", 
