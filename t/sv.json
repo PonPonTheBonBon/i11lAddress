@@ -1,9 +1,11 @@
 {
 	"terms": {
-		"recipient": "namn",
-		"care_of": "c/o",
 		"address": "adress",
-		"post_number": "postnummer",
-		"post_address": "postadress"
+		"care_of": "c/o",
+		"name": "namn",
+		"place": "ort",
+		"PLZ": "postnummer",
+		"post_address": "postadress",
+		"post_number": "postnummer"
 	}
 }

@@ -1,9 +1,11 @@
 {
 	"terms": {
-		"recipient": "recipient",
-		"care_of": "c/o",
 		"address": "address",
-		"post_number": "postnumber",
-		"post_address": "postaddress"
+		"care_of": "c/o",
+		"name": "name",
+		"place": "locality",
+		"PLZ": "PLZ",
+		"post_address": "postaddress",
+		"post_number": "postnumber"
 	}
 }

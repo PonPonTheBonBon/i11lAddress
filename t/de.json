@@ -1,0 +1,11 @@
+{
+	"terms": {
+		"address": "Address",
+		"care_of": "z.H.",
+		"name": "Name",
+		"place": "Ort",
+		"PLZ": "PLZ",
+		"post_address": "Postaddress",
+		"post_number": "PLZ"
+	}
+}

@@ -1,35 +1,35 @@
 {
-	"region": "SE", 
+	"region": "DE", 
 	"inputFields": [
 		{"id": "name", "row": 0}, 
 		{"id": "care_of", "row": 1, "optional": true},
 		{"id": "address", "row": 2},
-		{"id": "post_number", "row": 3, "validation": {"type": "numeric", "syntax": "000 00", "min": 5, "max": 5}}, 
-		{"id": "post_address", "row": 3} 
+		{"id": "PLZ", "row": 3, "validation": {"type": "numeric", "syntax": "00000", "min": 5, "max": 5}}, 
+		{"id": "place", "row": 3} 
 	],
 	"printOrder": [
 		{
-			"countries": ["SE"], 
-			"format": "{name}\n{address}\n{post_number} {post_address}",
+			"countries": ["DE"], 
+			"format": "{name}\n{address}\n{PLZ} {place}",
 			"optional": [
 				{
 					"id": "care_of", 
 					"insertAfter": "name",
 					"delimiter": "\n",
-					"beforeText": "c/o ",
+					"beforeText": "z.H. ",
 					"ifEmpty": ""
 				}
 			]
 		},
 		{
 			"default": true,
-			"format": "{name}\n{address}\n{post_number} {post_address}\nSWEDEN", 
+			"format": "{name}\n{address}\n{PLZ} {place}\nGERMANY", 
 			"optional": [
 				{
 					"id": "care_of", 
 					"insertAfter": "name",
 					"delimiter": "\n",
-					"beforeText": "c/o ",
+					"beforeText": "z.H. ",
 					"ifEmpty": ""
 				} 
 			]
