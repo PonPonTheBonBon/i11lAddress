@@ -2,7 +2,7 @@
 	"country": "SE", 
 	"input": [
 		{"id": "recipient", "row": 0}, 
-		{"id": "co", "row": 1, "optional": true},
+		{"id": "care_of", "row": 1, "optional": true},
 		{"id": "address", "row": 2},
 		{"id": "post_number", "row": 3, "validation": {"style": "numeric", "syntax": "000 00", "min": 5, "max": 5}}, 
 		{"id": "post_region", "row": 3} 
@@ -13,7 +13,7 @@
 			"format": "{recipient}\n{address}\n{post_number} {post_region}",
 			"optional": [
 				{
-					"id": "co", 
+					"id": "care_of", 
 					"insertAfter": "recipient",
 					"separator": "\n",
 					"ifEmpty": ""
@@ -25,8 +25,9 @@
 			"format": "{recipient}\n{address}\n{post_number} {post_region}\nSWEDEN", 
 			"optional": [
 				{
-					"id": "co", 
+					"id": "care_of", 
 					"insertAfter": "recipient",
+					"prepend": "c/o ",
 					"separator": "\n",
 					"ifEmpty": ""
 				} 
